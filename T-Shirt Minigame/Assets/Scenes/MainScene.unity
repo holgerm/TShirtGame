@@ -410,9 +410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4eebd86a607448e78ea046209d5ac3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToSpawn: {fileID: 50754072883175664, guid: 711630662f2e44e5a9c1343f608165df,
+  NormalesTShirt: {fileID: 50754072883175664, guid: 711630662f2e44e5a9c1343f608165df,
     type: 2}
-  secondsBetweenSpawn: 0.5
+  AltesTShirt: {fileID: 50754072883175664, guid: 09a053a4928b02e42924b22531953525,
+    type: 2}
+  secondsBetweenSpawn: 2.5
 --- !u!1 &728026173
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 785244685}
   - component: {fileID: 785244689}
+  - component: {fileID: 785244690}
   - component: {fileID: 785244688}
   - component: {fileID: 785244687}
   - component: {fileID: 785244686}
@@ -650,6 +653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterText: {fileID: 1621166429}
+  counter: 0
 --- !u!61 &785244688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -720,6 +724,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &785244690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 785244684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61df9b6b92dfb0e4f86657c7993232bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: {fileID: 1621166431}
 --- !u!1 &810776776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,6 +1380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1621166428}
   - component: {fileID: 1621166430}
+  - component: {fileID: 1621166431}
   - component: {fileID: 1621166429}
   m_Layer: 0
   m_Name: Counter
@@ -1441,6 +1458,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1621166431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1621166427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8f5bc7f0ec65a459cce431030d7b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Countertext: {fileID: 1621166429}
 --- !u!1 &1697524055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,7 +1792,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2099328171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.161, y: 0.2, z: 0}
+  m_LocalPosition: {x: 6.161, y: 0.83, z: 0}
   m_LocalScale: {x: 24.710556, y: 3.90438, z: 0}
   m_Children: []
   m_Father: {fileID: 767052026}
@@ -1777,10 +1806,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2099328171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf4be3840a484c81a8f5dedbb14e90f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b3fcce5b1162e14a8c817529ede4236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterText: {fileID: 1621166429}
+  counter: {fileID: 1621166431}
 --- !u!61 &2099328174
 BoxCollider2D:
   m_ObjectHideFlags: 0

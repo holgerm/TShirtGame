@@ -5,23 +5,28 @@ using UnityEngine;
 public class Freund : MonoBehaviour
 {
 
-	 public TextMesh counterText;
 
-	 private int counter = 0;
+     public Counter counter;
 
-	 void OnTriggerEnter2D (Collider2D other)
-	 {
-        Debug.Log("Tag getroffen: " + other.tag);
-        //  Debug.Log("FREUND freut sich über ein: " + other.name);
+    void OnTriggerEnter2D(Collider2D other)
+    {
 
-        if (other.tag != "TShirt")
-            return;
+        if (other.tag == "AltesTShirt")
+        {
+            counter.MehrPunkte(-2);
+            Destroy(other.gameObject);
+        }
 
-		Destroy(other.gameObject);
+        if (other.tag == "NormalesTShirt")
+        {
+            counter.MehrPunkte(1);
+            Destroy(other.gameObject);
+        }
 
-		counter++;
-		counterText.text = "" + counter;
-	 }
+
+
+
+    }
 
 
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-	 public Rigidbody2D itemToSpawn;
+	 public Rigidbody2D NormalesTShirt;
+     public Rigidbody2D AltesTShirt;  
 
 	 // Use this for initialization
 	 void Start ()
@@ -13,8 +14,14 @@ public class Spawn : MonoBehaviour
 
 	 void spawn ()
 	 {
-		  
-		  Instantiate(itemToSpawn, transform.position, Quaternion.AngleAxis(Random.Range(0.0f, 360.0f), Vector3.forward));
+        if (Random.Range(0f, 1f) > 0.5f)
+        {
+            Instantiate(AltesTShirt, transform.position, Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.forward));
+        }
+        else
+        {
+            Instantiate(NormalesTShirt, transform.position, Quaternion.AngleAxis(Random.Range(0.0f, 360.0f), Vector3.forward));
+        }
 	 }
 
 	 private float nextActionTime = 0.0f;
