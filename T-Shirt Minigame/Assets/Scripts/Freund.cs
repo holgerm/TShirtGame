@@ -11,11 +11,16 @@ public class Freund : MonoBehaviour
 
 	 void OnTriggerEnter2D (Collider2D other)
 	 {
-		  Debug.Log("FREUND freut sich!");
-		  Destroy(other.gameObject);
+        Debug.Log("Tag getroffen: " + other.tag);
+        //  Debug.Log("FREUND freut sich über ein: " + other.name);
 
-		  counter++;
-		  counterText.text = "" + counter;
+        if (other.tag != "TShirt")
+            return;
+
+		Destroy(other.gameObject);
+
+		counter++;
+		counterText.text = "" + counter;
 	 }
 
 
