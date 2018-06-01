@@ -10,7 +10,9 @@ public class Spawn : MonoBehaviour
 	 // Use this for initialization
 	 void Start ()
 	 {
-	 }
+        nextActionTime = Time.time;
+
+     }
 
 	 void spawn ()
 	 {
