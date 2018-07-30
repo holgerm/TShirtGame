@@ -804,7 +804,7 @@ MonoBehaviour:
     type: 2}
   AltesTShirt: {fileID: 50754072883175664, guid: 09a053a4928b02e42924b22531953525,
     type: 2}
-  secondsBetweenSpawn: 1.00315
+  secondsBetweenSpawn: 0.8
 --- !u!4 &915988510
 Transform:
   m_ObjectHideFlags: 0
@@ -933,7 +933,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4290313727
 --- !u!23 &1171300792
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1288,7 +1288,7 @@ SpriteRenderer:
   m_SortingLayerID: 171291409
   m_SortingLayer: -2
   m_SortingOrder: -10
-  m_Sprite: {fileID: 21300000, guid: d1cb7888664486a458ea5ac809bec0d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2b15c06ddd0d364fae1b3e1fabd7f7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1305,8 +1305,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1527313887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.3, y: -0.15, z: 4}
-  m_LocalScale: {x: 2.5177438, y: 2.5856612, z: 1}
+  m_LocalPosition: {x: -18.7, y: -1.8, z: 4}
+  m_LocalScale: {x: 1.9512514, y: 2.1008518, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -1568,11 +1568,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4560429272551274, guid: 02304bd78fbe3f444acc53e2bc2d69b2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -17.845
+      value: -18.88
       objectReference: {fileID: 0}
     - target: {fileID: 4560429272551274, guid: 02304bd78fbe3f444acc53e2bc2d69b2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.21
+      value: 14.6
       objectReference: {fileID: 0}
     - target: {fileID: 4560429272551274, guid: 02304bd78fbe3f444acc53e2bc2d69b2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1597,6 +1597,20 @@ Prefab:
     - target: {fileID: 4560429272551274, guid: 02304bd78fbe3f444acc53e2bc2d69b2, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 212793621461861250, guid: 02304bd78fbe3f444acc53e2bc2d69b2,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c07a8ef36859144a87114b8d763551a,
+        type: 3}
+    - target: {fileID: 4560429272551274, guid: 02304bd78fbe3f444acc53e2bc2d69b2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.9901403
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560429272551274, guid: 02304bd78fbe3f444acc53e2bc2d69b2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2.199752
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02304bd78fbe3f444acc53e2bc2d69b2, type: 2}

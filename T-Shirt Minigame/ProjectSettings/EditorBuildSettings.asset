@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DieScene.unity
     guid: cff728574d325bd4d91d33b83f6c3930
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 69bdd5d15dcb0634689268c7e18e11ac
   m_configObjects: {}
