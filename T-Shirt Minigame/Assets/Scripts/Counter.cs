@@ -37,6 +37,7 @@ public class Counter : MonoBehaviour {
             herz = GameObject.Find("Herz1");
             GameObject.Destroy(herz);
             //goto "Game Over"
+            UnityEngine.SceneManagement.SceneManager.LoadScene("DieScene");
         }
         if(heart == 2)
         {
